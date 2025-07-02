@@ -1,0 +1,86 @@
+/* static/home.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 420px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: block;
+    color: #e0e0e0;
+}
+
+select,
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    font-size: 1rem;
+    color: #333;
+    transition: 0.3s ease-in-out;
+}
+
+select:focus,
+input[type="submit"]:hover {
+    background-color: #e6f2ff;
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    accent-color: #4dc3ff;
+}
+
+.radio-group label {
+    font-size: 1rem;
+    margin: 0;
+}
+
+input[type="submit"] {
+    background-color: #ffffff;
+    color: #203a43;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background-color: #d3efff;
+}

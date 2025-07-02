@@ -1,0 +1,65 @@
+/* static/style.css */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.1rem;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="number"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #ffffff;
+    color: #1e3c72;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #cde1f9;
+}
