@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <title>Smart CGPA Calculator</title>
+</head>
+<body>
+    <h1>Smart CGPA Calculator</h1>
+    <form method="POST" action="">
+        <!--Program selection-->
+        <label for="program">Select Program:</label>
+        <select id="program" name="program" required>
+            <option value="UG">Undergraduate</option>
+            <option value="PG">postgraduate</option>
+        </select><br><br>
+        <!--Mode selection-->
+<label>Calculate Mode:</label><br>
+<div class="radio-group">
+    <input type="radio" name="mode" value="year" checked>
+    <label for="year">year-wise</label>
+</div>
+<div class="radio-group">
+    <input type="radio" name="mode" value="semester">
+    <label for="semester">Semester-wise</label>
+</div><br>
+
+
+        <input type="submit" value="Next">
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>CGPA Calculate</title>
+</head>
+<body>
+    <h1>CGPA Calculate</h1>
+    <form method="POST" action="">
+        {% for i in range (1,total_units+1) %}
+        <fieldset>
+            <legend>
+                {% if mode == 'year' %}
+                Year {{i}} marks
+                {% else %}
+                Semester {{i}} marks
+                {% endif %}
+            </legend>
+            <label for="total_{{i}}">total Marks:</label>
+            <input type="number" id="total_{{i}}" name="total_{{i}}" required><br><br>
+            <label for="obtained_{{i}}">Obtained Marks:</label>
+            <input type="number" id="obtained_{{i}}" name="obtained_{{i}}" required><br><br>
+        </fieldset>
+        {% endfor %}
+        <input type="submit" value="Calculate CGPA">
+    </form>
+</body>
+</html>
